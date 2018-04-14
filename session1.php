@@ -26,8 +26,7 @@ You are a valid user. Here is your reward!!!<br />
 	 <h2>Please submit a name</h2>
 	 <input type = "text" name = "name" required autofocus></br>
 	 <button class = "btn btn-lg btn-primary btn-block" type = "submit"
-			name = "submitName"
-			onClick="javascript:window.location.href='session2.php'">
+			name = "submitName">
 			Submit
 		</button>
 </form>

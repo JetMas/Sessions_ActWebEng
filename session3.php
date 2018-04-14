@@ -20,7 +20,7 @@ session_start();
         $.ajax({
           type:'POST',
           data: info,
-          url: 'setColorFood.php',
+          url: 'setColorFood.php'
         });
       }
     });
