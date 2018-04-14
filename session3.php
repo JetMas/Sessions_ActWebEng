@@ -4,7 +4,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html>
-<!--
 <head>
   <script
 	  src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -12,7 +11,6 @@ session_start();
 	  crossorigin="anonymous">
   </script>
   <script>
-  /*
   $(document).ready(function(){
     $('#submit').click(function() {
       var c = $('#color').val();
@@ -27,10 +25,8 @@ session_start();
       }
     });
   });
-  */
   </script>
 </head>
--->
 <body>
 
 <?php
@@ -43,19 +39,17 @@ if ($_SESSION["username"] != "") {
 <h1>You're a valid user!</h1>
 <img src='https://i.imgur.com/9umnm.gif'>
 
-<!--
-  <form>
-    <label>
-      Color:
-      <input type="text" name="color" id="color" required/>
-    </label>
-    <label>
-      Food:
-      <input type="text" name="food" id="food" required/>
-    </label>
-    <button type="submit" id="submit">Submit</button>
-  </form>
--->
+<form>
+  <label>
+    Color:
+    <input type="text" name="color" id="color" required/>
+  </label>
+  <label>
+    Food:
+    <input type="text" name="food" id="food" required/>
+  </label>
+  <button type="submit" id="submit">Submit</button>
+</form>
 <?php
 }
 else{
