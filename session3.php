@@ -16,14 +16,14 @@ session_start();
       console.log("Clicked");
       var c = $('#color').val();
       var f = $('#food').val();
-      if(c.val() != '' && f.val() != ''){
-        var info = 'action=submitColorFood&color='+c.val()+'&food='+f.val();
+      if(c != '' && f != ''){
+        var info = 'action=submitColorFood&color='+c+'&food='+f;
         $.ajax({
           type:'POST',
           data: info,
           url: 'setColorFood.php',
           success: function(){
-            $('#info').innerhtml = `Color: ${c.val()}, Food: ${f.val()}`;
+            $('#info').innerhtml = `Color: ${c}, Food: ${f}`;
           }
         });
       }
@@ -56,8 +56,10 @@ if ($_SESSION["username"] != "") {
   <button type="submit" id="submit">Submit</button>
 </form>
 
-<div name="info" id="info"></div>
 <?php
+  if ($_SESSION["color"] != "" && $_SESSION['food']){
+    echo "{$_SESSION['color']} {$_SESSION['food']}";
+  }
 }
 else{
 ?>
