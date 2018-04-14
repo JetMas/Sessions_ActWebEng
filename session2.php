@@ -13,7 +13,7 @@ if ($_SESSION["username"] != "") {
 	echo "<h1>Hello ";
 	echo "{$_SESSION['name']} ({$_SESSION['username']})";
   echo "<h2> ";
-	echo "<a href="session3.php">Another page</a>";
+	echo "<a href='session3.php'>Another page</a>";
 }else{
 ?>
 
