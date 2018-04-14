@@ -42,6 +42,7 @@ if ($_SESSION["username"] != "") {
 <h1>You're a valid user!</h1>
 <img src='https://i.imgur.com/9umnm.gif'>
 
+<!--
   <form>
     <label>
       Color:
@@ -53,7 +54,7 @@ if ($_SESSION["username"] != "") {
     </label>
     <button type="submit" id="submit">Submit</button>
   </form>
-
+-->
 <?php
 else{
 ?>
