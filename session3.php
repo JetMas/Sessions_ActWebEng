@@ -13,7 +13,7 @@ session_start();
   <script>
   $(document).ready(function(){
     $('#submit').click(function() {
-      console.log("Clicked");
+
       var c = $('#color').val();
       var f = $('#food').val();
       if(c != '' && f != ''){
@@ -23,7 +23,7 @@ session_start();
           data: info,
           url: 'setColorFood.php',
           success: function(){
-            $('#info').innerhtml = `Color: ${c}, Food: ${f}`;
+            console.log(`${c}, ${f}`);
           }
         });
       }
