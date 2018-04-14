@@ -10,7 +10,7 @@ session_start();
 // Read the sessions
 if ($_SESSION["username"] != "") {
   echo "<h1>You're a valid user!</h1>";
-  echo "<img src="i.imgur.com/9umnm.gif";
+  echo "<img src='i.imgur.com/9umnm.gif'";
 	echo "<h1>Hello ";
   echo "{$_SESSION['name']} ({$_SESSION['username']})";
   echo "<h2> ";
