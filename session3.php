@@ -7,21 +7,17 @@ session_start();
 <body>
 
 <?php
-
 // Read the sessions
 if ($_SESSION["username"] != "") {
-
 	echo "<h1>Hello ";
-	echo "{$_SESSION['name']} ({$_SESSION['username']})";
-  echo "<h2> ";
+    echo $_SESSION["username"];
+    echo "<h2> ";
 }else{
 ?>
-
 	You are not a valid user
-	<?php
+  <a href="index.html">Please login here</a>
+<?php
 }
-
-
 ?>
 
 </body>
