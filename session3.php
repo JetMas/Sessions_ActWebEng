@@ -15,7 +15,6 @@ session_start();
     $('#submit').click(function() {
       var c = $('#color').val();
       var f = $('#food').val();
-      console.log(`${c}, ${f}`);
       if(c != '' && f != ''){
         var info = 'action=submitColorFood&color='+c+'&food='+f;
         $.ajax({
