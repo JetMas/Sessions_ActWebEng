@@ -21,8 +21,6 @@ session_start();
           type:'POST',
           data: info,
           url: 'setColorFood.php',
-          success: function(response){
-          }
         });
       }
     });
