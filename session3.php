@@ -11,6 +11,7 @@ session_start();
 	  crossorigin="anonymous">
   </script>
   <script>
+  /*
   $(document).ready(function(){
     $('#submit').click(function() {
       var c = $('#color').val();
@@ -25,6 +26,7 @@ session_start();
       }
     });
   });
+  */
   </script>
 </head>
 <body>
