@@ -53,7 +53,7 @@ if ($_SESSION["username"] != "") {
     Food:
     <input type="text" name="food" id="food" required/>
   </label>
-  <button type="submit" id="submit">Submit</button>
+  <button id="submit">Submit</button>
 </form>
 
 <?php
