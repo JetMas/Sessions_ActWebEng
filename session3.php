@@ -39,7 +39,6 @@ if ($_SESSION["username"] != "") {
 	echo "<h1>Hello ";
   echo "{$_SESSION['name']} ({$_SESSION['username']})";
   echo "<h2> ";
-}
 ?>
 <h1>You're a valid user!</h1>
 <img src='https://i.imgur.com/9umnm.gif'>
@@ -58,6 +57,7 @@ if ($_SESSION["username"] != "") {
   </form>
 -->
 <?php
+}
 else{
 ?>
 	You are not a valid user
