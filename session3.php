@@ -45,16 +45,18 @@ if ($_SESSION["username"] != "") {
 <img src='https://i.imgur.com/9umnm.gif'>
 
 <br>
-<label>
-  Color:
-  <input type="text" name="color" id="color" required/>
-</label>
-<br>
-<label>
-  Food:
-  <input type="text" name="food" id="food" required/>
-</label>
-<button id="submit">Submit</button>
+<form>
+  <label>
+    Color:
+    <input type="text" name="color" id="color" required/>
+  </label>
+  <br>
+  <label>
+    Food:
+    <input type="text" name="food" id="food" required/>
+  </label>
+  <button id="submit">Submit</button>
+</form>
 <br>
 <?php
   if ($_SESSION["color"] != "" && $_SESSION['food'] != ""){
