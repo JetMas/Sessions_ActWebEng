@@ -1,6 +1,14 @@
 <?php
 // Start the session
 session_start();
+
+if($_POST['color'] != "" && $_POST['food'] != ""){
+  var color = $_POST['color'];
+  var food = $_POST['food'];
+
+  $_SESSION['color'] = color;
+  $_SESSION['food'] = food;
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +28,7 @@ session_start();
         $.ajax({
           type:'POST',
           data: info,
-          url: 'setColorFood.php',
+          url: 'session3.php',
           success: function(){
           }
         });

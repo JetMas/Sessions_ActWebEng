@@ -7,4 +7,6 @@ var food = $_POST['food'];
 $_SESSION['color'] = color;
 $_SESSION['food'] = food;
 
+
+echo "success";
 ?>
