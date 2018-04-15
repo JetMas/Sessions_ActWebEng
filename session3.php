@@ -1,14 +1,14 @@
 <?php
 // Start the session
 session_start();
-
+/*
 if(!empty($_POST['color']) && !empty($_POST['food'])){
   var color = $_POST['color'];
   var food = $_POST['food'];
 
   $_SESSION['color'] = color;
   $_SESSION['food'] = food;
-}
+}*/
 ?>
 <!DOCTYPE html>
 <html>
