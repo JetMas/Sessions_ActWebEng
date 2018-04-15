@@ -3,11 +3,8 @@
 session_start();
 /*
 if(!empty($_POST['color']) && !empty($_POST['food'])){
-  var color = $_POST['color'];
-  var food = $_POST['food'];
-
-  $_SESSION['color'] = color;
-  $_SESSION['food'] = food;
+  $_SESSION['color'] = $_POST['color'];
+  $_SESSION['food'] = $_POST['food'];
 }*/
 ?>
 <!DOCTYPE html>
@@ -28,7 +25,7 @@ if(!empty($_POST['color']) && !empty($_POST['food'])){
         $.ajax({
           type:'POST',
           data: info,
-          url: 'session3.php',
+          url: 'setColorFood.php',
           success: function(){
           }
         });
@@ -62,7 +59,7 @@ if ($_SESSION["username"] != "") {
 <button id="submit">Submit</button>
 
 <?php
-  if ($_SESSION["color"] != "" && $_SESSION['food']){
+  if ($_SESSION["color"] != "" && $_SESSION['food'] != ""){
     echo "{$_SESSION['color']} {$_SESSION['food']}";
   }
 }

@@ -1,11 +1,8 @@
 <?php
 session_start();
 
-var color = $_POST['color'];
-var food = $_POST['food'];
-
-$_SESSION['color'] = color;
-$_SESSION['food'] = food;
+$_SESSION['color'] = $_POST['color'];
+$_SESSION['food'] = $_POST['food'];
 
 
 echo "success";
