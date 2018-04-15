@@ -25,9 +25,7 @@ if(!empty($_POST['color']) && !empty($_POST['food'])){
         $.ajax({
           type:'POST',
           data: info,
-          url: 'setColorFood.php',
-          success: function(){
-          }
+          url: 'setColorFood.php'
         });
       }
     });
@@ -57,7 +55,7 @@ if ($_SESSION["username"] != "") {
   <input type="text" name="food" id="food" required/>
 </label>
 <button id="submit">Submit</button>
-
+<br>
 <?php
   if ($_SESSION["color"] != "" && $_SESSION['food'] != ""){
     echo "{$_SESSION['color']} {$_SESSION['food']}";
