@@ -18,6 +18,9 @@ if ($_SESSION["username"] != "") {
 ?>
 
 <h1>Valid User</h1>
+<?php if ($_SESSION['name'] != ""){
+	echo $_SESSION['name'];
+} ?>
 You are a valid user. Here is your reward!!!<br />
 
 <form class = "form-name" role = "form"
