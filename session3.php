@@ -2,7 +2,7 @@
 // Start the session
 session_start();
 
-if($_POST['color'] != "" && $_POST['food'] != ""){
+if(!empty($_POST['color']) && !empty($_POST['food'])){
   var color = $_POST['color'];
   var food = $_POST['food'];
 
