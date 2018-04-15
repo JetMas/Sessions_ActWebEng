@@ -24,7 +24,7 @@ if(!empty($_POST['color']) && !empty($_POST['food'])){
       var c = $('#color').val();
       var f = $('#food').val();
       if(c != '' && f != ''){
-        var info = 'action=submitColorFood&color='+c+'&food='+f;
+        var info = 'color='+c+'&food='+f;
         $.ajax({
           type:'POST',
           data: info,
